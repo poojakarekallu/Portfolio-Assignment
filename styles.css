@@ -12,6 +12,23 @@ body{
     justify-content: space-between;
     background-color:rgb(14, 146, 133);
 }
+.typewriter{
+    position:relative;
+}
+.typewriter::after{
+    content:'|';
+    position:absolute;
+    right: 0;
+    color:white;
+    background-color: rgb(216, 15, 55);
+    width: 100%;
+    animation: typing 3s steps(15) alternate infinite;
+}
+@keyframes typing{
+    to{
+        width: 0%;
+    }
+}
 
 nav{
     display:flex;
